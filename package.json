@@ -4,7 +4,9 @@
   "description": "Morange (沐橙) suite of WeChat Mini Programs",
   "scripts": {
     "build": "pnpm -r --if-present build",
-    "dev": "pnpm --filter @morange/box dev:weapp",
+    "dev": "pnpm --filter @morange/convert dev:weapp",
+    "dev:box": "pnpm --filter @morange/box dev:weapp",
+    "dev:convert": "pnpm --filter @morange/convert dev:weapp",
     "lint": "pnpm -r --if-present lint",
     "type-check": "pnpm -r --if-present type-check",
     "format": "prettier --write \"**/*.{ts,tsx,js,json,md,scss}\""

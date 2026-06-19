@@ -2,9 +2,9 @@ export const BRAND = {
   name: '沐橙',
   nameEn: 'Morange',
   slogan: '把日常工具收进一个轻巧的小程序家族',
-  color: '#ff7a1a',
-  colorLight: '#ffb36b',
-  colorDark: '#b84a00'
+  color: '#E66C32',
+  colorLight: '#F3A06F',
+  colorDark: '#A9471F'
 } as const;
 
 export const STORAGE_KEYS = {
@@ -60,17 +60,18 @@ export const MINI_PROGRAMS: MiniProgramDefinition[] = [
     summary: '沐橙全系列工具的统一导航入口，负责产品分发、收藏和使用记录。',
     features: ['工具分类展示', '一键跳转小程序', '收藏常用工具', '最近使用记录'],
     backendRoadmap: '后续接入账号体系、云端同步收藏和个性化推荐。',
-    accent: '#ff7a1a'
+    accent: '#E66C32'
   },
   {
     id: 'morange-convert',
+    appId: 'wx36628617f47d9adf',
     name: '沐橙换算',
     nameEn: 'Morange Convert',
     shortName: '换算',
     icon: '/assets/icons/convert.png',
     path: '/pages/index/index',
     tier: 'fast',
-    status: 'building',
+    status: 'online',
     tags: ['单位换算', '离线可用', '纯前端'],
     summary: '长度、重量、面积、体积、时间、进制和像素等常用单位换算。',
     features: ['常用单位换算', '历史记录', '常用单位置顶'],

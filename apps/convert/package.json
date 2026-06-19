@@ -1,0 +1,19 @@
+{
+  "name": "@morange/convert",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Morange Convert WeChat Mini Program",
+  "scripts": {
+    "dev:weapp": "taro build --type weapp --watch",
+    "build": "taro build --type weapp",
+    "lint": "eslint \"src/**/*.{ts,tsx}\"",
+    "type-check": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@morange/constants": "workspace:*",
+    "@morange/utils": "workspace:*"
+  },
+  "devDependencies": {
+    "@morange/eslint-config": "workspace:*"
+  }
+}

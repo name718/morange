@@ -108,11 +108,7 @@ export default function IndexPage() {
           <Text className="section__title">我的收藏</Text>
           <View className="chipGrid">
             {favoriteApps.map((app) => (
-              <View
-                key={app.id}
-                className="appChip"
-                onClick={() => openApp(app, recordRecentApp)}
-              >
+              <View key={app.id} className="appChip" onClick={() => openApp(app, recordRecentApp)}>
                 <Image className="appChip__icon" src={app.icon} mode="aspectFit" />
                 <Text className="appChip__name">{app.shortName}</Text>
               </View>
