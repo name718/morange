@@ -1,0 +1,21 @@
+{
+  "name": "@morange/box",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Morange Box WeChat Mini Program",
+  "scripts": {
+    "dev:weapp": "taro build --type weapp --watch",
+    "build": "taro build --type weapp",
+    "lint": "eslint \"src/**/*.{ts,tsx}\"",
+    "type-check": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@morange/constants": "workspace:*",
+    "@morange/hooks": "workspace:*",
+    "@morange/ui": "workspace:*",
+    "@morange/utils": "workspace:*"
+  },
+  "devDependencies": {
+    "@morange/eslint-config": "workspace:*"
+  }
+}

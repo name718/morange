@@ -1,0 +1,122 @@
+.detail {
+  min-height: 100vh;
+  padding: 28px;
+}
+
+.detail--empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.detail__hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 58px 34px;
+  color: #ffffff;
+  border-radius: 42px;
+  box-shadow: 0 28px 70px rgba(90, 52, 12, 0.18);
+}
+
+.detail__icon {
+  width: 132px;
+  height: 132px;
+  padding: 18px;
+  margin-bottom: 24px;
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 34px;
+}
+
+.detail__name {
+  margin-bottom: 8px;
+  font-size: 46px;
+  font-weight: 900;
+}
+
+.detail__nameEn {
+  font-size: 26px;
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.detail__panel {
+  padding: 32px;
+  margin-top: 24px;
+  background: rgba(255, 255, 255, 0.86);
+  border-radius: 34px;
+}
+
+.detail__meta {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.detail__pill {
+  padding: 10px 18px;
+  font-size: 22px;
+  font-weight: 800;
+  color: #ffffff;
+  background: #2b190d;
+  border-radius: 999px;
+}
+
+.detail__pill--light {
+  color: #8b541e;
+  background: #fff2e3;
+}
+
+.detail__title,
+.detail__sectionTitle {
+  display: block;
+  margin: 30px 0 16px;
+  font-size: 32px;
+  font-weight: 900;
+  color: #2b190d;
+}
+
+.detail__summary,
+.detail__roadmap {
+  display: block;
+  font-size: 27px;
+  line-height: 1.65;
+  color: #6f5d50;
+}
+
+.detail__feature {
+  display: block;
+  padding: 18px 20px;
+  margin-bottom: 12px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #3f2c1f;
+  background: #fff6ec;
+  border-radius: 20px;
+}
+
+.detail__actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 36px;
+}
+
+.detail__button {
+  padding: 22px 18px;
+  font-size: 28px;
+  font-weight: 900;
+  color: #ffffff;
+  text-align: center;
+  background: #ff7a1a;
+  border-radius: 24px;
+}
+
+.detail__button--ghost {
+  color: #8b541e;
+  background: #fff2e3;
+}
+
+.detail__button--ghost.is-active {
+  color: #ffffff;
+  background: #2b190d;
+}
