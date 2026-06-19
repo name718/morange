@@ -167,6 +167,21 @@ export const MINI_PROGRAMS: MiniProgramDefinition[] = [
     features: ['内置词库', '背诵进度', '生词本', '复习提醒'],
     backendRoadmap: '可拓展云端词库、自定义词本和智能复习。',
     accent: '#56ccf2'
+  },
+  {
+    id: 'morange-image',
+    name: '沐橙图片',
+    nameEn: 'Morange Image',
+    shortName: '图片',
+    icon: '/assets/icons/image.png',
+    path: '/pages/index/index',
+    tier: 'creative',
+    status: 'building',
+    tags: ['裁剪', '压缩', '本地处理'],
+    summary: '图片裁剪、压缩、缩尺寸和保存到相册，全部在本机完成。',
+    features: ['单图选择', '比例裁剪', '目标大小压缩', '保存相册'],
+    backendRoadmap: '可拓展批量处理、证件照换底色、模板和云端素材库。',
+    accent: '#E66C32'
   }
 ];
 

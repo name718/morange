@@ -1,0 +1,29 @@
+page {
+  min-height: 100%;
+  color: #2a211b;
+  background:
+    radial-gradient(circle at 16% 4%, rgba(243, 160, 111, 0.48), transparent 28%),
+    linear-gradient(180deg, #fff4e7 0%, #fffaf4 48%, #f7f4ee 100%);
+  font-family: 'PingFang SC', 'Hiragino Sans GB', sans-serif;
+}
+
+view,
+text,
+button,
+image,
+canvas,
+scroll-view,
+slider {
+  box-sizing: border-box;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  line-height: inherit;
+  background: transparent;
+}
+
+button::after {
+  border: 0;
+}
