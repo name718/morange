@@ -2,7 +2,7 @@
   "miniprogramRoot": "dist/",
   "projectname": "morange-image",
   "description": "沐橙图片",
-  "appid": "testAppId",
+  "appid": "wx36903f7bf4921643",
   "setting": {
     "urlCheck": true,
     "es6": true,
