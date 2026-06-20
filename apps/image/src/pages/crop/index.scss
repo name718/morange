@@ -1,0 +1,46 @@
+.cropPage {
+  min-height: 100vh;
+  padding: 32px;
+}
+
+.previewImage {
+  height: 400px;
+  margin-bottom: 24px;
+}
+
+.presetOptions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.presetBtn {
+  height: auto;
+  padding: 22px 16px;
+  line-height: 1.45;
+  text-align: left;
+
+  &__label,
+  &__size,
+  &__note {
+    display: block;
+  }
+
+  &__label {
+    margin-bottom: 6px;
+    font-size: 28px;
+    font-weight: 800;
+  }
+
+  &__size,
+  &__note {
+    color: #8b6f5d;
+    font-size: 22px;
+  }
+}
+
+.resultPreview {
+  max-height: 520px;
+  margin-bottom: 24px;
+}

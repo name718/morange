@@ -1,0 +1,84 @@
+.historyPage {
+  min-height: 100vh;
+  padding: 32px;
+}
+
+.historyHint {
+  display: block;
+  margin-bottom: 20px;
+  color: #8b6f5d;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.clearButton,
+.saveSmallButton {
+  border: 1px solid rgba(230, 108, 50, 0.35);
+  border-radius: 999px;
+  background: #fff7ef;
+  color: #d85c27;
+  font-weight: 800;
+
+  &::after {
+    border: none;
+  }
+}
+
+.clearButton {
+  height: 72px;
+  line-height: 72px;
+  font-size: 26px;
+}
+
+.historyList {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.historyCard {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 20px;
+  padding: 18px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 14px 36px rgba(87, 49, 20, 0.08);
+}
+
+.historyThumb {
+  width: 180px;
+  height: 180px;
+  border-radius: 18px;
+  background: #f4efe8;
+}
+
+.historyBody {
+  min-width: 0;
+}
+
+.historyTitle,
+.historyMeta {
+  display: block;
+}
+
+.historyTitle {
+  margin-bottom: 8px;
+  color: #2a211b;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.historyMeta {
+  margin-bottom: 6px;
+  color: #8b6f5d;
+  font-size: 23px;
+}
+
+.saveSmallButton {
+  width: 160px;
+  height: 62px;
+  margin-top: 10px;
+  line-height: 62px;
+  font-size: 24px;
+}

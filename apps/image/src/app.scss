@@ -2,9 +2,10 @@ page {
   min-height: 100%;
   color: #2a211b;
   background:
-    radial-gradient(circle at 16% 4%, rgba(243, 160, 111, 0.48), transparent 28%),
+    radial-gradient(circle at 18% 0%, rgba(255, 186, 117, 0.35), transparent 34%),
     linear-gradient(180deg, #fff4e7 0%, #fffaf4 48%, #f7f4ee 100%);
-  font-family: 'PingFang SC', 'Hiragino Sans GB', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  box-sizing: border-box;
 }
 
 view,
@@ -26,4 +27,190 @@ button {
 
 button::after {
   border: 0;
+}
+
+page .compressPage,
+page .convertPage,
+page .mergePage,
+page .resizePage,
+page .splitPage,
+page .watermarkPage,
+page .cropPage,
+page .framePage,
+page .historyPage {
+  min-height: 100vh;
+  padding: 28px 28px 48px;
+  background:
+    radial-gradient(circle at 0% 0%, rgba(230, 108, 50, 0.18), transparent 30%),
+    linear-gradient(180deg, #fff6ed 0%, #fffaf6 42%, #f5f1ea 100%);
+}
+
+page .uploadSection,
+page .configSection,
+page .resultSection {
+  position: relative;
+  overflow: hidden;
+  padding: 32px;
+  margin-bottom: 24px;
+  border: 1px solid rgba(120, 78, 42, 0.08);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 18px 48px rgba(87, 49, 20, 0.08);
+}
+
+page .uploadSection::before,
+page .configSection::before,
+page .resultSection::before {
+  position: absolute;
+  top: 0;
+  left: 32px;
+  right: 32px;
+  height: 6px;
+  border-radius: 0 0 999px 999px;
+  background: linear-gradient(90deg, #e66c32 0%, #f5b45f 58%, #5f8f6d 100%);
+  content: "";
+}
+
+page .previewImage,
+page .resultPreview {
+  display: block;
+  width: 100%;
+  border: 1px solid rgba(120, 78, 42, 0.08);
+  border-radius: 22px;
+  background: #f4efe8;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.55);
+}
+
+page .emptyUpload,
+page .emptyResult {
+  border: 2px dashed rgba(230, 108, 50, 0.28);
+  border-radius: 24px;
+  background:
+    linear-gradient(135deg, rgba(255, 248, 240, 0.92), rgba(250, 239, 227, 0.82)),
+    repeating-linear-gradient(-45deg, rgba(230, 108, 50, 0.04) 0 12px, transparent 12px 24px);
+}
+
+page .emptyUpload__title,
+page .emptyResult__title {
+  color: #6c4029;
+  font-weight: 700;
+}
+
+page .emptyUpload__desc {
+  color: #9a7a63;
+}
+
+page .imageMeta,
+page .resultInfo,
+page .uploadInfo {
+  display: block;
+  color: #8b6f5d;
+  line-height: 1.5;
+}
+
+page .sectionTitle {
+  position: relative;
+  display: block;
+  padding-left: 18px;
+  color: #2a211b;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+}
+
+page .sectionTitle::before {
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 8px;
+  height: 28px;
+  border-radius: 999px;
+  background: #e66c32;
+  content: "";
+}
+
+page .button {
+  width: 100%;
+  height: 92px;
+  line-height: 92px;
+  border: 0;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #e66c32 0%, #f08b3e 100%);
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 800;
+  box-shadow: 0 14px 28px rgba(230, 108, 50, 0.24);
+}
+
+page .button:active {
+  opacity: 0.92;
+  transform: scale(0.985);
+}
+
+page .button[disabled],
+page .button:disabled {
+  background: #dccfc3;
+  color: #fffaf5;
+  box-shadow: none;
+  opacity: 1;
+}
+
+page .qualityBtn,
+page .targetBtn,
+page .formatBtn,
+page .directionBtn,
+page .modeBtn,
+page .presetBtn,
+page .ratioBtn,
+page .gridOption,
+page .typeBtn,
+page .positionBtn {
+  border: 1px solid rgba(120, 78, 42, 0.1);
+  border-radius: 18px;
+  background: #fbf4ed;
+  color: #3a2b22;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.65);
+}
+
+page .colorCard.is-active,
+page .shadowToggle.is-active {
+  border-color: #e66c32;
+  background: linear-gradient(180deg, #fff2e7 0%, #ffe4d1 100%);
+  color: #c8501f;
+  box-shadow: 0 10px 24px rgba(230, 108, 50, 0.15);
+}
+
+page .qualityBtn.is-active,
+page .targetBtn.is-active,
+page .formatBtn.is-active,
+page .directionBtn.is-active,
+page .modeBtn.is-active,
+page .presetBtn.is-active,
+page .ratioBtn.is-active,
+page .gridOption.is-active,
+page .typeBtn.is-active,
+page .positionBtn.is-active {
+  border-color: #e66c32;
+  background: linear-gradient(180deg, #fff2e7 0%, #ffe4d1 100%);
+  color: #c8501f;
+  box-shadow: 0 10px 24px rgba(230, 108, 50, 0.15);
+}
+
+page .sliderLabel__value,
+page .statItem__value {
+  color: #d85c27;
+}
+
+page .input {
+  border: 1px solid rgba(120, 78, 42, 0.1);
+  border-radius: 18px;
+  background: #fbf4ed;
+}
+
+page .hiddenCanvas {
+  position: fixed;
+  top: -9999px;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
 }

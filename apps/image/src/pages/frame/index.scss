@@ -1,0 +1,58 @@
+.framePage {
+  min-height: 100vh;
+  padding: 32px;
+}
+
+.previewImage,
+.resultPreview {
+  height: 400px;
+  margin-bottom: 24px;
+}
+
+.colorGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.colorCard,
+.shadowToggle {
+  height: auto;
+  padding: 18px;
+  border: 1px solid rgba(120, 78, 42, 0.1);
+  border-radius: 18px;
+  background: #fbf4ed;
+  line-height: 1.4;
+
+  &::after {
+    border: none;
+  }
+
+  &.is-active {
+    border-color: #e66c32;
+    background: #fff0e3;
+    color: #c8501f;
+  }
+}
+
+.colorCard__swatch {
+  width: 100%;
+  height: 54px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.colorCard__label {
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.shadowToggle {
+  width: 100%;
+  margin-bottom: 24px;
+  font-size: 28px;
+  font-weight: 800;
+}
